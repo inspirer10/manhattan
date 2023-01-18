@@ -1,38 +1,209 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #000;
+    color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+    position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header h1 {
+    letter-spacing: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: normal;
+    margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.background__img {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1509576252973-8592f95a7fd9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.first__row,
+.second__row {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 90vw;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    left: 5%;
+    padding: 5rem 0;
+}
+
+.first__row p,
+.second__row p {
+    cursor: pointer;
+}
+
+.second__row {
+    bottom: 0;
+}
+
+
+/*NOTE - RODZIELIĆ NA NOWE PLIKI */
+
+.description__first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 17.5vh;
+    margin: 7.5vh 0 5vh 12%;
+    width: 55%;
+}
+
+.description__first__element {
+    text-align: left;
+    width: 45%;
+    font-size: 1.2rem;
+}
+
+.description__first__element:nth-child(3) {
+    width: 80%;
+}
+
+
+/*NOTE - RODZIELIĆ NA NOWE PLIKI */
+
+.about__us {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17.5%;
+    height: 100vh;
+}
+
+.about__us h1 {
+    width: 50%;
+    font-size: 3.75rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.75rem;
+}
+
+.about__us__informations {
+    width: 45%;
+}
+
+.about__us__informations>p {
+    margin: 5vh 0;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.about__us__details {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__us__details p {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.about__us__location {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15% 5vh;
+}
+
+.about__us__location__place {
+    width: 50%;
+}
+
+.about__us__location__details {
+    width: 37.5%;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.about__us__location__place h2 {
+    font-weight: normal;
+    font-size: 2.25rem;
+    letter-spacing: 0.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.about__us__location__place p {
+    font-size: 1.075rem;
+}
+
+#map {
+    background-color: white;
+    padding-bottom: 7.5vh;
+}
+
+.about__us__map {
+    background-image: url(https://as1.ftcdn.net/v2/jpg/02/43/85/82/1000_F_243858276_7HN4QaVzwDrwD1XxFAgKarrleAmYn2Il.jpg);
+    height: 52.5vh;
+    width: 70vw;
+    margin: 0 auto;
+    filter: brightness(0.6);
+}
+
+
+/*NOTE - DO NOWEGO PLIKU  */
+
+.architecture {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vh 15%;
+    margin: 0 auto;
+}
+
+.architecture__description {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.architecture__description h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.architecture__description p {
+    font-size: 1.1rem;
+    margin: 1.25rem 0;
+}
+
+.architecture__picture {
+    background-image: url('https://images.unsplash.com/photo-1512403754473-27835f7b9984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80');
+    width: 33vw;
+    height: 85vh;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
